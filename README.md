@@ -12,7 +12,7 @@ After forking and cloning this repository, run the following commands:
 ## Rest Endpoint:
 `http://localhost:4000/api/v1`
 
-## Todo API API endpoints
+## Todo API endpoints
 
 ### Get All Todos
 ----
