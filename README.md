@@ -1,4 +1,4 @@
-# Tech challenge Ironhack Barcelona 2019 - REST API
+# Tech challenge Ironhack Barcelona 2019 - Todo REST API
 
 After forking and cloning this repository, run the following commands:
 ```
