@@ -2,7 +2,7 @@
 
 After forking and cloning this repository, run the following commands:
 ```
-  cd challenge-todo-server
+  cd challenge-todo-api
   npm install
   npm run watch
 ```
