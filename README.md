@@ -17,14 +17,16 @@ After forking and cloning this repository, run the following commands:
 ### Get All Todos
 ----
   Returns json data with all todos.
+  
   | URL | Method | Params | Data Params | Success response | Error response|
-  |-|-|-|-|-|-|
+  |--|--|--|--|--|--|
   |`/todos`|GET|None|None|Status 200 [todos]||
 
 
 **Get Todo**
 ----
   Returns json data about a single todo.
+  
   | URL | Method | Params | Data Params | Success response | Error response|
   |-|-|-|-|-|-|
   |`/todos/:id`|GET|`id=[ObjectId]`|None|Status 200|Status 404|
