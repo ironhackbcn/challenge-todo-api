@@ -28,27 +28,30 @@ After forking and cloning this repository, run the following commands:
   Returns json data about a single todo.
   
   | URL | Method | Params | Data Params | Success response | Error response|
-  |-|-|-|-|-|-|
+  |--|--|--|--|--|--|
   |`/todos/:id`|GET|`id=[ObjectId]`|None|Status 200|Status 404|
 
 **Create Todo**
 ----
   Returns json data about a the created todo.
+  
   | URL | Method | Params | Data Params | Success response | Error response|
-  |-|-|-|-|-|-|
+  |--|--|--|--|--|--|
   |`/todos`|POST|None|`title=[String]`|Status 200|Status 400 |
 
 **Update Todo**
 ----
   Returns json data about a the updated todo.
+  
   | URL | Method | Params | Data Params | Success response | Error response|
-  |-|-|-|-|-|-|
+  |--|--|--|--|--|--|
   |`/todos/:id`|PUT|`id=[ObjectId]`|`title=[String]`|Status 200|Status 400 |
 
 
 **Delete Todo**
 ----
   Returns json data about a the deleted todo.
+  
   | URL | Method | Params | Data Params | Success response | Error response|
-  |-|-|-|-|-|-|
+  |--|--|--|--|--|--|
   |`/todos/:id`|DELETE|`id=[ObjectId]`|none|Status 200|Status 400 |
