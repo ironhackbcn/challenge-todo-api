@@ -20,7 +20,7 @@ After forking and cloning this repository, run the following commands:
   
   | URL | Method | Params | Data Params | Success response | Error response|
   |--|--|--|--|--|--|
-  |`/todos`|GET|None|None|Status 200 [todos]||
+  |`/todos`|GET|None|None|Status 200||
 
 
 **Get Todo**
