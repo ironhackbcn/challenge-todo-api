@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const port = process.env.PORT || 4000;
 const publicDomain = process.env.PUBLIC_DOMAIN || 'http://localhost:3000'
 
-const config = require('./config/DB');
+const config = require('./config/db');
 
 const app = express();
 
