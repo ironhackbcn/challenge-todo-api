@@ -33,7 +33,7 @@ After forking and cloning this repository, run the following commands:
 
 **Create Todo**
 ----
-  Returns json data about a the created todo.
+  Returns json data about the created todo.
   
   | URL | Method | Params | Data Params | Success response | Error response|
   |--|--|--|--|--|--|
@@ -41,7 +41,7 @@ After forking and cloning this repository, run the following commands:
 
 **Update Todo**
 ----
-  Returns json data about a the updated todo.
+  Returns json data about the updated todo.
   
   | URL | Method | Params | Data Params | Success response | Error response|
   |--|--|--|--|--|--|
@@ -50,7 +50,7 @@ After forking and cloning this repository, run the following commands:
 
 **Delete Todo**
 ----
-  Returns json data about a the deleted todo.
+  Returns json data about the deleted todo.
   
   | URL | Method | Params | Data Params | Success response | Error response|
   |--|--|--|--|--|--|
