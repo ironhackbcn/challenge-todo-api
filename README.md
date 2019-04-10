@@ -14,6 +14,8 @@ After forking and cloning this repository, run the following commands:
 
 ## Todo API endpoints
 
+### WARNING: The API is empty so don't expect any result if you don't add data.
+
 ### Get All Todos
 ----
   Returns json data with all todos.
