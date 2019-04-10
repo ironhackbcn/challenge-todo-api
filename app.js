@@ -10,11 +10,17 @@ const config = require('./config/db');
 
 const app = express();
 
+app.use(cors({
+  credentials: true,
+  origin: "http://localhost:3000"
+}));
+
 mongoose.Promise = global.Promise;
 mongoose.connect(config.DB).then(
   () => {console.log('Database is connected') },
   err => { console.log('Can not connect to the database'+ err)}
 );
+
 
 const todoRoute = require('./routes/todoRoute');
 

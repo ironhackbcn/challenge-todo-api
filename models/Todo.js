@@ -7,6 +7,9 @@ let Todo = new Schema({
   },
   body: {
     type: String
+  },
+  isDone: {
+    type: Boolean
   }
 },{ timestamps: true }
 );
