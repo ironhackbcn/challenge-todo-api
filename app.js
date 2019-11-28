@@ -19,10 +19,12 @@ mongoose.connect(config.DB).then(
 const todoRoute = require('./routes/todoRoute');
 
 app.use(bodyParser.json());
+
 app.use(cors({
   credentials: true,
   origin: [publicDomain]
 }));
+
 
 app.use('/api/v1', todoRoute);
 

@@ -78,6 +78,22 @@ class TodosController {
     }
   }
 
+  async updateDone(req, res){
+    const {id} = req.params;
+    if(!ObjectId.isValid(id) && !id.match(/^[a-fA-F0-9]{24}$/)){
+      return res.status(404).send({
+        success: 'false',
+        message: 'todo does not exist',
+      });
+    }
+    try{
+      const updatedDone = await Todo.findByIdAndUpdate(id, {$set: {done: 'true'}}, {new: true})
+    } catch (error){
+      resjson(error);
+    }
+    
+  }
+
   async deleteTodo(req, res){
     const {id} = req.params;
     if(!ObjectId.isValid(id) && !id.match(/^[a-fA-F0-9]{24}$/)){
