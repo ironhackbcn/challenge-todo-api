@@ -3,7 +3,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 const {ObjectId} = mongoose.Types;
 
-// Require Todo model in our routes module
 let Todo = require('../models/Todo');
 
 class TodosController {
