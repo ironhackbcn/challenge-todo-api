@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
@@ -16,6 +18,7 @@ mongoose.connect(config.DB).then(
   err => { console.log('Can not connect to the database'+ err)}
 );
 
+const authRouter = require("./routes/auth");
 const todoRoute = require('./routes/todoRoute');
 
 app.use(bodyParser.json());
@@ -24,6 +27,7 @@ app.use(cors({
   origin: [publicDomain]
 }));
 
+app.use("/auth", authRouter);
 app.use('/api/v1', todoRoute);
 
 const server = app.listen(port, function(){
