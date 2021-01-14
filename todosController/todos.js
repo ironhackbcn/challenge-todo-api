@@ -38,7 +38,7 @@ class TodosController {
     if (!req.body.title) {
       return res.status(400).send({
         success: 'false',
-        message: 'title is required',
+        message: 'Add the title',
       });
     }
     try {
