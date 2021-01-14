@@ -35,19 +35,21 @@ class TodosController {
 
   async createTodo(req, res) {
     let newTodo = new Todo(req.body);
+    let title = req.body.title;
+    let body = req.body.body;
     if (!req.body.title) {
       return res.status(400).send({
-        success: 'false',
-        message: 'title is required',
+        success: "false",
+        message: "title is required",
       });
     }
     try {
-      const todo = await newTodo.save();
+      const todo = await newTodo.save({title, body});
       res.status(200).json(todo);
     } catch (error) {
       res.status(400).send({
-        success: 'false',
-        message: 'Unable to save to database',
+        success: "false",
+        message: "title is required",
       });
     }
   }
@@ -58,14 +60,14 @@ class TodosController {
 
     if(!ObjectId.isValid(id) && !id.match(/^[a-fA-F0-9]{24}$/)){
       return res.status(404).send({
-        success: 'false',
-        message: 'todo does not exist',
+        success: "false",
+        message: "todo does not exist",
       });
     }
     if (!req.body.title) {
       return res.status(400).send({
-        success: 'false',
-        message: 'title is required',
+        success: "false",
+        message: "title is required",
       });
     }
 
@@ -82,8 +84,8 @@ class TodosController {
     const {id} = req.params;
     if(!ObjectId.isValid(id) && !id.match(/^[a-fA-F0-9]{24}$/)){
       return res.status(404).send({
-        success: 'false',
-        message: 'todo does not exist',
+        success: "false",
+        message: "todo does not exist",
       });
     }
     try {
@@ -91,8 +93,8 @@ class TodosController {
       return res.status(200).json(deleted);
     } catch (error) {
       res.status(400).send({
-        success: 'false',
-        message: 'Unable to delete from database',
+        success: "false",
+        message: "Unable to delete from database",
       });
     }
   }
