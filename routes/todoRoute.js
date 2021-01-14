@@ -1,5 +1,6 @@
 const express = require('express');
 const TodoController = require('../todosController/todos');
+const Todo = require('./../models/Todo');
 
 const router = express.Router();
 
